@@ -1,0 +1,133 @@
+$header-background-color: #FDF1EB;
+
+p {
+    margin: -5px 0px -5px 0px;
+}
+
+.header {
+    background-color: $header-background-color;
+    color: #725C5C;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: calc(100vw - 13.72rem);
+    height: 4.25rem;
+
+    position: absolute;
+    top: 0;
+    margin: 0 0 0 13.72rem;
+
+    .header-left-side {
+        margin-left: 2.375rem;
+
+        .header-text {
+            font-size: 0.875rem;
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+        }
+
+        #header-text-bold {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+            font-size: 1.37rem;
+        }
+    }
+}
+
+.header-right-side {
+    display: flex;
+    max-height: 2.125rem;
+    gap: 1.25rem;
+    margin-right: 2.375rem;
+
+    .language-dropdown {
+        width: 6.063rem;
+        height: 2.125rem;
+
+        font-size: 0.875rem;
+        font-weight: 400;
+        color: #333333;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        text-decoration: none;
+        border: 2px solid #CCCCCC;
+        border-radius: 0.3rem;
+
+        #language-dropdown-img {
+            margin-bottom: 0.063rem;
+        }
+
+    }
+
+    .profile {
+        display: flex;
+        align-items: center;
+        gap: 0.438rem;
+
+        .profile-text {
+            display: flex;
+            flex-direction: column;
+            gap: 0.5rem;
+            align-items: flex-end;
+            justify-content: center;
+
+            #profile-text-welcome {
+                font-family: 'Quicksand';
+                font-weight: 400;
+                font-size: 0.875rem;
+                color: #333333;
+            }
+
+            #profile-text-email {
+                font-family: 'Quicksand';
+                font-weight: 400;
+                font-size: 0.75rem;
+                color: #333333;
+            }
+        }
+
+        .profile-picture {
+            width: 2.125rem;
+            height: 1.938rem;
+            position: absolute;
+            bottom: 0;
+            left: -0.094rem;
+        }
+
+        .image-border {
+            background-color: $header-background-color;
+            border-radius: 50%;
+            width: 1.894rem;
+            height: 1.914rem;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .notification-badge {
+            background-color: #F85959;
+            border-radius: 50%;
+            width: 0.75rem;
+            height: 0.75rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            z-index: 1;
+            right: -1.25rem;
+            top: -1.938rem;
+        }
+
+        .notification-quantity {
+            font-family: 'Roboto', sans-serif;
+            color: #FFFFFF;
+            font-weight: 700;
+            font-size: 0.625rem;
+        }
+    }
+}
