@@ -49,7 +49,9 @@ export class MainContentComponent implements OnInit {
   createNewTopic() {
     const form = document.querySelector('.form') as HTMLElement;
     const topicCreated = document.querySelector('.topic-submited') as HTMLElement;
+    const inputReset = document.querySelector('form') as HTMLFormElement;
 
+    inputReset.reset();
     form.style.display = 'block';
     topicCreated.style.display = 'none';
   }
