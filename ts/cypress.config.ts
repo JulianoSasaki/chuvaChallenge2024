@@ -12,7 +12,7 @@ export default defineConfig({
     runMode: 0,
     openMode: 0,
   },
-  viewportWidth: 1280,
+  viewportWidth: 1366,
   viewportHeight: 800,
   e2e: {
     setupNodeEvents(on, config) {
